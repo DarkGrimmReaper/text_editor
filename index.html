@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link do favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Links de Estilização -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Editor de Texto</title>
+</head>
+<body>
+
+    <!-- container responsivo com bootstrap -->
+    <div class="container d-flex justify-content-center">
+        <h1>Editor de Texto</h1>
+    </div>
+
+    <!-- div dos botões -->
+    <div class="container d-flex justify-content-center" id="botoes">
+
+        <!-- Negrito / Italico -->
+        <div class="btn" id="fontes">
+            <button class="btn" id="negrito" onclick="bold()"><i class="bi bi-type-bold"></i></button>
+            <button class="btn" id="italico" onclick="italic()"><i class="bi bi-type-italic"></i></button>
+        </div>
+
+        <!-- Alinhamento -->
+        <div class="btn" id="alinhamento">
+            <button class="btn" id="esquerda" onclick="left()"><i class="bi bi-text-left"></i></button>
+            <button class="btn" id="centro" onclick="center()"><i class="bi bi-text-center"></i></button>
+            <button class="btn" id="direita" onclick="right()"><i class="bi bi-text-right"></i></button>
+        </div>
+
+        <!-- Maiusculo/Minusculo -->
+        <div class="btn" id="transforma">
+            <button class="btn" id="maiusculo" onclick="uppercase()">A</button>
+            <button class="btn" id="minusculo" onclick="lowercase()">a</button>
+            <button class="btn" id="minMax" onclick="capitalize()">Aa</button>
+        </div>
+
+        <!-- Borracha/Resetar -->
+        <div class="btn" id="limpa">
+            <button class="btn" id="limpar-texto" onclick="cleanText()"><i class="bi bi-eraser-fill"></i></button>
+        </div>
+    </div>
+
+    <!-- Campo de Texto -->
+    <div class="container d-flex justify-content-center" id="camppoDeTexto">
+        <textarea id="texto" autofocus placeholder="Escreva seu texto aqui..."></textarea>
+    </div>
+
+    <!-- Link do JS -->
+    <script src="js/functions.js"></script>
+</body>
+</html>

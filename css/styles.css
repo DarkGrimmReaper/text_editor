@@ -1,0 +1,29 @@
+/* css dos botoes */
+#botoes {
+    width: 35%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* propriedades dos botoes */
+
+#negrito,#italico,
+
+#esquerda,#centro,#direita,
+
+#maiusculo,#minusculo,#minMax,
+
+#limpar-texto{
+    border-style: solid;
+    border-color: black;
+}
+
+/* area de texto */
+textarea{
+    border-radius: 10px;
+    width: 535px;
+    height: 300px;
+    resize: none;
+}
